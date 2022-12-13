@@ -61,7 +61,7 @@
             </h2>
             <ol>
                 <li class="wh">
-                    <h4>
+                    <h4 class="h4s">
                         Pre-classic
                     </h4>
                     <div>
@@ -72,11 +72,12 @@
                     <img src="preclassic.jpg">
                 </li>
                 <li class="wh">
-                    <h4>
-                        <a href="classic.minecraft.net">
+                    <h4 class="h4s">
                             Classic
-                        </a>
                     </h4>
+                    <input>
+                        Play minecraft classic here!
+                </input>
                     <div>
                         During minecraft classic, survival mode was added, along with new blocks including:
                     </div>
@@ -97,7 +98,7 @@
                     <img src="ihatemyself.jpg">
                 </li>
                 <li>
-                    <h4>
+                    <h4 class="h4s">
                         indev
                     </h4>
                     <div>
@@ -111,7 +112,7 @@
                     </div>
                 </li>
                 <li>
-                    <h4>
+                    <h4 class="h4s">
                         Infdev
                     </h4>
                     <div>
@@ -125,7 +126,7 @@
                     Now were getting into the big updates!
                 </h2>
                 <li>
-                    <h4>
+                    <h4 class="h4s">
                         Alpha
                     </h4>
                     <div>
@@ -140,7 +141,7 @@
                 </li>
 
                 <li>
-                    <h4>
+                    <h4 class="h4s">
                         Beta
                     </h4>
                     <div>
@@ -163,7 +164,49 @@
             </span>
         </section>
         <style>
+            h1 {
+    font-family:"Cosmic Sans"
+}
+
+.devs {
+    margin-bottom:2rem
+}
+
+#end {
+    font-family:'copperplate gothic';
+}
+
+html {
+    border-style:double;
+    border-radius:2rem;
+    border-color:lime;
+    color:lime;
+    background-color:lightgreen;
+}
+
+.h4s {
+    display:block;
+    margin:16px;
+
+}
+
+li {
+    margin-bottom:1cm;
+}
+
+
 
         </style>
+        <script>
+            var mc =
+            document.querySelector('input')
+
+            mc.addEventListener('click',function(){
+                if(confirm('Play mc classic?')){
+                    window.open('https://classic.minecraft.net')
+                }
+            });
+        </script>
+
     </body>
  </html>
